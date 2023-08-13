@@ -15,3 +15,9 @@ class NoteView:
 
     def get_input(self, prompt):
         return input(prompt)
+
+    def show_notes_by_date(self, notes):
+        print("Список заметок на указанную дату:")
+        for note in notes:
+            print(f"ID: {note['id']}, Заголовок: {note['title']}, Время: {note['timestamp']}")
+
